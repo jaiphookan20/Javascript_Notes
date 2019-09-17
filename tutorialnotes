@@ -1,0 +1,139 @@
+"""
+"""
+Javascript is a scripting language, 
+
+High level, interpreted programming language
+
+Conforms to the ECMAScript specification
+
+Multi-paradigm language - can be written in a number of diff ways - object oriented, functional etc
+
+Language of the browser/client but also can be run on the server (Node.js)
+  
+
+HOW TO ASSIGN A VALUE: LET & CONST
+
+Two ways to assign/initialize a variable - let & const (another one, var, is no longer used)
+
+Const is short for constant, therefore when using const - the variable has been assigned and cannot later be assigned
+Each time you use const, you have to assign the value (unlike the case with let)
+for eg. const name='John', const age=30; const rating=4.5
+
+if you do 
+
+const x=4;
+
+& then
+
+x=8, it will lead to an error as it cannot be reassigned
+
+Let, on the other hand, does not have that restriction
+
+you may assign a value when using let but not necessarily
+
+for eg, you can do let z; here, z is unnasigned or you can do let z=5, and then later below, you can do z=9, and it won't lead to an error
+
+TO CHECK TYPE OF VARIABLE:
+
+for eg - let age; (undefined here)
+
+console.log(typeof age); - it will return string
+
+CONSOLE.LOG()
+
+The console.log() is a function in JavaScript which is used to print any kind of variables defined before in it or 
+to just print any message that needs to be displayed to the user. Syntax: console.log(A); Parameters: It accepts a parameter 
+which can be an array, an object or any message
+
+TEMPLATE STRING
+
+Template strings/literals are string literals allowing embedded expressions
+
+Template strings allow you to embed variables within a string - With TS - you have to use backcommas for the strings `` (below ~ sign, next to esc button)
+
+For eg. console.log(`my name is  ${name} and I am {age)`;
+
+const name=John;
+const age=30;
+
+console.log(hello) - output - My name is John and I am 30
+
+TYPE OF
+
+let z;
+
+console.log(typeof z); - returns undefined
+
+STRING PROPERTIES: 
+
+const s="Hello World!"
+
+console.log(s.length); - returns 12
+
+CONVERTING TO UPPERCASE - variable.toUpperCase 
+
+- In Python, variable.upper() = in Javascript, console.log(variable.toUpperCase())
+
+CONVERT TO LOWERCASE - console.log(variable.substring())
+
+if you want to reduce to lowercase certain specific characters of a variable:
+
+for eg. let s="Hello World"
+
+console.log(s.substring(0,5)) - returns in lowercase the characters with the index value between 0 to 5
+
+SPLIT - console.log(s.split(""))
+
+for eg const s="technology, computers, IT, code"
+
+console.log(s.split(",")) - This is a comma between two punctuations,
+returns - 
+
+0: "technology"
+1: "computers"
+2: "IT"
+3: "code"
+length=4 
+
+ARRAYS:An array is a special variable, which can hold more than one value at a time
+
+Note: Python does not have built-in support for Arrays, but Python Lists can be used instead.
+
+ARRAY CONSTRUCTOR:
+
+eg const fruits=['apple','oranges','pears'];
+
+console.log(fruits[1]); - returns oranges bcoz oranges are in index value 1
+
+ 
+FOR, WHILE LOOPS: WATCH FROM 35MINS
+
+
+
+HIGH ORDER ARRAYS - forEAch, map, filter
+
+
+CONDITIONAL STATEMENTS - If
+
+TERNARY OPERATOR - If
+
+The conditional (ternary) operator is the only JavaScript operator that takes three operands. This operator is frequently used as a shortcut for the if statement.
+
+TERNARY OPERATOR usually used '?'
+ 
+EXAMPLE - 
+
+function getFee(isMember) {
+  return (isMember ? "$2.00" : "$10.00"); 
+}
+
+console.log(getFee(true));
+// expected output: "$2.00"
+
+console.log(getFee(false));
+// expected output: "$10.00"
+
+console.log(getFee(1));
+// expected output: "$2.00"
+
+"""
